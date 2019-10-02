@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { TextField, Grid, Container, Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import logo from '../logo.svg';
-import './Login.css';
+import '../Login.css';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 
 class Login extends Component {
@@ -29,35 +30,33 @@ class Login extends Component {
             <p>{mensagem}</p>    
              <form>
                  <Grid container direction="column">    
-                    <TextField
-                        id="login"
-                        label="E-mail"
-                         required
-                         placeholder="teste@gmail.com.br"
-                          type="email"
-                    />
-                    <TextField
-                        id="senha"
-                        label="Senha"
-                        required
-                        type="password"
+                    <Grid container direction="row" justify="center"alignItems="center">
+                        <TextField id="login" label="E-mail" required placeholder="teste@gmail.com.br" type="email" variant="outlined" className="InputLogin"/>
                         
-                    />
+                    </Grid>
                     <br></br>
-                    <Button variant="contained" onClick={() => this.entrarClick()} className="test" color="primary" >Entrar</Button>
-                      <br></br>
-                    <Button  variant="contained" color="secondary" >Cadastrar</Button>
-                        <br></br>
-                    <a href="">Esqueci minha senha</a>    
+                    <Grid container direction="row" justify="center"alignItems="center">
+                        <TextField id="senha" label="Senha" required type="password" variant="outlined" className="InputLogin"/>
+                    </Grid>
                     
+                    <br></br>
+
+                    <Grid xs="12" container direction="row" justify="center"alignItems="center" className="gridButtonLogin">
+                        <Grid xs="6" direction="row" justify="center"alignItems="center" className="ButtonLogin" >
+                            <Button variant="contained" onClick={() => this.entrarClick()} className="test" color="primary">Entrar</Button>
+                        </Grid>
+                        <Grid xs="6" direction="row"justify="center"alignItems="center">
+                            <Button  variant="contained" color="secondary" >Cadastrar</Button>
+                        </Grid> 
+                    </Grid>
+                    <br></br>
+                    <a href="">Esqueci minha senha</a> 
                 </Grid>    
             </form>
             </Container>
        
         );
     }
-
-
 }
 
 export default Login;
