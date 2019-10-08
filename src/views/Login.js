@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { TextField, Grid, Container, Button } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
 import logo from '../logo.svg';
 import '../Login.css';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 
 class Login extends Component {
@@ -22,7 +20,6 @@ class Login extends Component {
         const {mensagem} = this.state;
         return (
             <Container maxWidth="sm" className="cont">
-        
             <div>
                 <img src={logo} className="logo-img"  alt="logo"/>
             </div>
@@ -50,7 +47,7 @@ class Login extends Component {
                         </Grid> 
                     </Grid>
                     <br></br>
-                    <a href="">Esqueci minha senha</a> 
+                    <a href='/recuperarSenha'>Esqueci minha senha</a> 
                 </Grid>    
             </form>
             </Container>
