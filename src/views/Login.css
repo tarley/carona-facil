@@ -1,13 +1,37 @@
-.logo-img {
-    width:150px;
-    height:150px;
-    
-}
-
-.test{
-    margin-bottom: 15px
+#entrar{
+    margin-bottom: 15px;
+    background-color: #FF7F00;
 }
 
 .cont{
-    margin-top: 180px;
+    margin-top: 150px;
+}
+
+#cadastrar {
+    background-color: #B5B5B5;
+}
+
+.cont2{
+    margin-top: 100px;
+}
+
+#texto{
+    color: #FF7F00;
+}
+
+#salvar{
+    margin-bottom: 15px;
+    background-color: #FF7F00
+}
+
+#cadastrotext{
+    color: #FF7F00;
+}
+
+.cont3{
+    margin-top: 50px;
+}
+
+#cadastrar2{
+    background-color: #FF7F00
 }

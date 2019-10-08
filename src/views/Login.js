@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { TextField, Grid, Container, Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import logo from '../logo.svg';
+import logo from './unnamed.png';
 import './Login.css';
-
 
 class Login extends Component {
     state = {
@@ -25,7 +24,6 @@ class Login extends Component {
             <div>
                 <img src={logo} className="logo-img"  alt="logo"/>
             </div>
-            <h1>Carona Fácil</h1>
             <p>{mensagem}</p>    
              <form>
                  <Grid container direction="column">    
@@ -35,21 +33,22 @@ class Login extends Component {
                          required
                          placeholder="teste@gmail.com.br"
                           type="email"
+                          variant="outlined"
                     />
                     <TextField
                         id="senha"
                         label="Senha"
                         required
                         type="password"
+                        variant="outlined"
                         
                     />
                     <br></br>
-                    <Button variant="contained" onClick={() => this.entrarClick()} className="test" color="primary" >Entrar</Button>
+                    <Button id="entrar" variant="contained" onClick={() => this.entrarClick()} >Entrar</Button>
                       <br></br>
-                    <Button  variant="contained" color="secondary" >Cadastrar</Button>
+                    <Button id="cadastrar" variant="contained" >Cadastrar</Button>
                         <br></br>
-                    <a href="">Esqueci minha senha</a>    
-                    
+                    <a href='./recuperarSenha' >Esqueci Minha Senha</a>
                 </Grid>    
             </form>
             </Container>
