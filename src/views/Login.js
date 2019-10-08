@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
 import { TextField, Grid, Container, Button } from '@material-ui/core'
-<<<<<<< HEAD
-import { makeStyles } from '@material-ui/core/styles';
 import logo from './unnamed.png';
 import './Login.css';
-=======
-import logo from '../logo.svg';
-import '../Login.css';
->>>>>>> 248a922991075b375fd42bbc9ba275e2342cf6ea
 
 class Login extends Component {
     state = {
-        mensagem:'Favor informar o login'
+        mensagem: 'Favor informar o login'
     }
-    
+
     entrarClick = () => {
         alert("teste, click no botão");
-        this.setState({mensagem:'Login inválido'
-            
+        this.setState({
+            mensagem: 'Login inválido'
+
         });
     }
-    
+
     render() {
-        const {mensagem} = this.state;
+        const { mensagem } = this.state;
         return (
             <Container maxWidth="sm" className="cont">
             <div>
@@ -46,7 +41,7 @@ class Login extends Component {
                         type="password"
                         variant="outlined"
                         
-                    </Grid>
+                    />
                     <br></br>
                     <Button id="entrar" variant="contained" onClick={() => this.entrarClick()} >Entrar</Button>
                       <br></br>
@@ -56,7 +51,7 @@ class Login extends Component {
                 </Grid>    
             </form>
             </Container>
-       
+
         );
     }
 }
