@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { TextField, Grid, Container, Button } from '@material-ui/core'
+<<<<<<< HEAD
 import { makeStyles } from '@material-ui/core/styles';
 import logo from './unnamed.png';
 import './Login.css';
+=======
+import logo from '../logo.svg';
+import '../Login.css';
+>>>>>>> 248a922991075b375fd42bbc9ba275e2342cf6ea
 
 class Login extends Component {
     state = {
@@ -20,7 +25,6 @@ class Login extends Component {
         const {mensagem} = this.state;
         return (
             <Container maxWidth="sm" className="cont">
-        
             <div>
                 <img src={logo} className="logo-img"  alt="logo"/>
             </div>
@@ -42,7 +46,7 @@ class Login extends Component {
                         type="password"
                         variant="outlined"
                         
-                    />
+                    </Grid>
                     <br></br>
                     <Button id="entrar" variant="contained" onClick={() => this.entrarClick()} >Entrar</Button>
                       <br></br>
@@ -55,8 +59,6 @@ class Login extends Component {
        
         );
     }
-
-
 }
 
 export default Login;
