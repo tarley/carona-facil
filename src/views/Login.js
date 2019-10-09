@@ -9,11 +9,20 @@ class Login extends Component {
     }
 
     entrarClick = () => {
-        alert("teste, click no botão");
-        this.setState({
-            mensagem: 'Login inválido'
-
-        });
+        const {login, senha} = this.state;
+        
+        //alert("teste, click no botão");
+        
+        if(login === 'admin' && senha === '123'){
+            this.props.onLogin();
+        }
+        else{
+            this.setState({
+               mensagem: 'Login inválido' 
+            });
+        }
+    
+        
     }
 
     render() {
@@ -33,6 +42,7 @@ class Login extends Component {
                          placeholder="teste@gmail.com.br"
                           type="email"
                           variant="outlined"
+                          onChange={(e) => this.setState({login: e.target.value})}
                     />
                     <TextField
                         id="senha"
@@ -40,7 +50,7 @@ class Login extends Component {
                         required
                         type="password"
                         variant="outlined"
-                        
+                        onChange={(e) => this.setState({senha: e.target.value})}
                     />
                     <br></br>
                     <Button id="entrar" variant="contained" onClick={() => this.entrarClick()} >Entrar</Button>
