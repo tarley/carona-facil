@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.4.3",
+    "@material-ui/icons": "^4.5.1",
     "material-components-web": "^3.2.0",
     "material-table": "^1.52.0",
     "materialize-css": "^1.0.0-rc.2",

@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {AppBar, Toolbar , Container, Select, MenuItem} from '@material-ui/core';
 import MaterialTable from 'material-table';
 
+import {tableIcons} from '../utils/TableIcons';
+
 const columns=[
     { title: 'Nome', field: 'nome' },
     { title: 'Origem', field: 'origem' },
@@ -41,6 +43,7 @@ class Home extends Component{
                             title="Para onde vai?"
                             columns={columns}
                             data={data}
+                            icons={tableIcons}
                         />    
                     </Container>
                     
