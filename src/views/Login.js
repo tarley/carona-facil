@@ -21,8 +21,6 @@ class Login extends Component {
                mensagem: 'Login inválido' 
             });
         }
-    
-        
     }
 
     render() {
@@ -32,18 +30,22 @@ class Login extends Component {
             <div>
                 <img src={logo} className="logo-img"  alt="logo"/>
             </div>
-            <p>{mensagem}</p>    
+            <p>{mensagem}</p>
+            
              <form>
                  <Grid container direction="column">    
                     <TextField
                         id="login"
                         label="E-mail"
-                         required
-                         placeholder="teste@gmail.com.br"
-                          type="email"
-                          variant="outlined"
-                          onChange={(e) => this.setState({login: e.target.value})}
+                        required
+                        placeholder="teste@gmail.com.br"
+                        type="email"
+                        variant="outlined"
+                        onChange={(e) => this.setState({login: e.target.value})}
                     />
+                    </Grid> 
+                    <br></br>
+                    <Grid container direction="column">
                     <TextField
                         id="senha"
                         label="Senha"
@@ -52,16 +54,16 @@ class Login extends Component {
                         variant="outlined"
                         onChange={(e) => this.setState({senha: e.target.value})}
                     />
-                    <br></br>
+                    </Grid>
+                    
                     <Button id="entrar" variant="contained" onClick={() => this.entrarClick()} >Entrar</Button>
-                      <br></br>
                     <Button id="cadastrar" variant="contained" >Cadastrar</Button>
-                        <br></br>
-                    <a href='./recuperarSenha' >Esqueci Minha Senha</a>
-                </Grid>    
+                    
+                    <div>
+                        <a href='./recuperarSenha' >Esqueci Minha Senha</a>
+                    </div>
             </form>
             </Container>
-
         );
     }
 }
