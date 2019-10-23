@@ -1,0 +1,23 @@
+  menuButton{
+    marginRight: 2,
+  }
+  
+  title{
+    display: none,
+  }
+  
+  inputRoot{
+    color: 'inherit'
+  }
+  
+  inputInput{
+    width: '100%';
+  }
+  
+  sectionDesktop{
+    display: 'none';
+  }
+  
+  sectionMobile{
+    display: 'flex';
+  }
