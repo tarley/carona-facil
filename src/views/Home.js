@@ -4,6 +4,8 @@ import MaterialTable from 'material-table';
 
 import {tableIcons} from '../utils/TableIcons';
 
+/*import Chat from '../components/Chat';*/
+
 const columns=[
     { title: 'Nome', field: 'nome' },
     { title: 'Origem', field: 'origem' },
@@ -46,7 +48,6 @@ class Home extends Component{
                             icons={tableIcons}
                         />    
                     </Container>
-                    
                 </main>
                 <footer>
                     <h2>Footer</h2>
