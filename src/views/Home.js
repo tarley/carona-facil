@@ -10,7 +10,10 @@ import {AppBar, Toolbar , Container, MenuItem} from '@material-ui/core';
 import MaterialTable from 'material-table';
 import {tableIcons} from '../utils/TableIcons';
 
+
 import './Home.css';
+import Chat from '../components/Chat';
+
 
 const columns=[
     { title: 'Nome', field: 'nome' },
