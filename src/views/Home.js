@@ -4,6 +4,8 @@ import MaterialTable from 'material-table';
 
 import {tableIcons} from '../utils/TableIcons';
 
+import './Home.css'
+
 const columns=[
     { title: 'Nome', field: 'nome' },
     { title: 'Origem', field: 'origem' },
@@ -33,7 +35,7 @@ class Home extends Component{
                             O Carona Fácil é um Sistema de transporte universitário pensado para facilitar a vida dos estudantes que necessitam de locomoção rápida, num momento que você mais precisa.
                             A faculdade é um divisor de águas na vida de todos os jovens.
                             É balada, é pressão, é cultura e falta de dinheiro. Por que não utilizar uma ajuda? 
-                            Carona Fácil, vem para te salvar. Um transporte ágil e acessível que liga a quem precisa de carona e quem oferece! 
+                            Carona Fácil, vem para te salvar. Um transporte ágil e acessível que liga quem precisa de carona a quem oferece! 
                             Com a Carona Fácil você vai mais longe, seguindo uma tendência mundial de sustentabilidade.
                         </p>
                     </Container>
@@ -49,8 +51,10 @@ class Home extends Component{
                     
                 </main>
                 <footer>
-                    <h2>Footer</h2>
-                    <p>Todos os direitos reservados.</p>
+                    <div id="footer" maxWidht="sm" >
+                        <hr/>
+                        <h4>Copyright 2019, Belo Horizonte. All rights reserved. Site designed by Newton Studio.</h4>
+                    </div>    
                 </footer>
             </div>
         )
