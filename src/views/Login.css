@@ -1,6 +1,7 @@
 #entrar{
-    margin-bottom: 15px;
+    margin-top: 20px;
     background-color: #FF7F00;
+    right: 20px;
 }
 
 .cont{
@@ -8,11 +9,14 @@
 }
 
 #cadastrar {
+    margin-top: 20px;
     background-color: #B5B5B5;
+    left: 20px;
 }
 
 .cont2{
-    margin-top: 100px;
+    margin-top: 20px;
+    position: static;
 }
 
 #texto{

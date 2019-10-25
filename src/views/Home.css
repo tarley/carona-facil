@@ -1,5 +1,33 @@
+
 footer{
-    background-color: #283593;
-   
+    /*background-color: #3949ab;*/
+    height: 250px;
+    padding-top: 190px;
+    font-size: small;
     
 }
+
+  menuButton{
+    margin-right: 2;
+  }
+  
+  title{
+    display: none;
+  }
+  
+  inputRoot{
+    color: inherit
+  }
+  
+  inputInput{
+    width: 100%;
+  }
+  
+  sectionDesktop{
+    display: none;
+  }
+  
+  sectionMobile{
+    display: flex;
+  }
+
